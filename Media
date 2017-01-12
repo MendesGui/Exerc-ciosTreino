@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+
+/*10- Ler os valores de quatro notas escolares de um aluno. Calcular a média aritmética e apresentar a 
+ * mensagem“Aprovado” se a média obtida for maior ou igual a 5; caso contrário, apresentar a mensagem “Reprovado”. 
+ * Informar junto com cada mensagem o valor da média obtida.
+ */
+
+public class Exer10 {
+	public static void main(String args[]){
+		int soma = 0, media = 0, nota = 0;
+		for(int i = 0; i < 4; i++){
+			nota = Integer.parseInt(JOptionPane.showInputDialog("Entre com a primeira nota."));
+			soma += nota;
+			media = soma / 4;
+			
+		}
+		if(media > 5){
+			JOptionPane.showMessageDialog(null, media + "\n" + "Aprovado");
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, media + "\n" + "Reprovado");
+		}
+		
+		
+	}
+}
