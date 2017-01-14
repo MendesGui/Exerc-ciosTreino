@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+/*18- Elaborar um programa que efetue e a leitura sucessiva de valores numéricos e apresente no final o somatório, 
+a média e o total de valores lidos. O programa deve fazer as leituras dos valores enquanto o usuário estiver
+fornecendo valores positivos. Ou seja, o programa deve parar quando o usuário fornecer um valor negativo 
+(menor que zero).*/
+public class Exerc18 {
+	public static void main(String args[]){
+		double soma = 0, media = 0;
+		int i = 1, cont = 1;
+		for(; i > 0; i++){
+			i = Integer.parseInt(JOptionPane.showInputDialog("Entre com valores a serem lidos:"));
+			cont = cont + 1;
+			soma = soma + i;
+			media = soma / cont;
+		}
+		
+		System.out.println(soma + "\n" + media + "\n" +  cont);
+	}
+}
