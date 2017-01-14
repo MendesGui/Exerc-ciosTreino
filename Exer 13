@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+/*13- Ler o nome eo sexo de uma pessoa e apresentar como saída uma das seguintes mensagem:
+	“Ilmo. Sr.”, caso seja informado o sexo como masculino, ou “Ilma. Sra.”, 
+	caso seja informado o sexo como feminino. Apresentar também junto com cada mensagem de 
+	saudação o nome previamente informado.*/
+
+public class Exerc13 {
+	public static void main(String args[]){
+		String nome = JOptionPane.showInputDialog("Entre com o seu nome:");
+		String sexo = JOptionPane.showInputDialog("Entre com o seu sexo");
+		
+		if(sexo.equals("masculino")){
+			JOptionPane.showMessageDialog(null, sexo + "\n" + nome + " .Sr.");
+		}else{
+			JOptionPane.showMessageDialog(null, sexo + "\n" + nome + " .Sra.");
+		}
+		
+	
+	}
+}
