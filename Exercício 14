@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+/*Ler um valor numérico inteiro positivo ou negativo e apresentar o valor lido como sendo um valor positivo, ou seja, se o valor lido for menor ou igual a zero,
+ele deve ser multiplicado por -1. */
+
+public class Exerc {
+	public static void main(String args[]){
+		int negativo = Integer.parseInt(JOptionPane.showInputDialog("Entre com o valor:"));
+		
+		if(negativo >= 0){
+			System.out.println(negativo);
+		}else{
+			System.out.println(negativo * -1);
+		}
+	}
+}
