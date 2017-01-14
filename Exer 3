@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+/*3- Elaborar um programa que calcule e apresente o volume de uma caixa retangular, 
+ * utilizando a fórmula: Volume = comprimento * largura * altura
+ */
+
+public class Exerc3 {
+	public static void main(String args[]){
+		
+		double comprimento = Double.parseDouble(JOptionPane.showInputDialog("Comprimento"));
+		double largura = Double.parseDouble(JOptionPane.showInputDialog("Largura"));
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Altura"));
+		
+		double volume = comprimento * largura * altura;
+		
+		System.out.println(volume);
+	}
+}
