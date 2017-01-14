@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+//4-Efetuar a leitura de um número inteiro e apresentar o resultado do quadrado desse número.
+
+public class Exerc4 {
+	public static void main(String args[]){
+		
+		int numInt = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero Inteiro."));
+		
+		System.out.println(numInt * numInt);
+		
+	}
+}
