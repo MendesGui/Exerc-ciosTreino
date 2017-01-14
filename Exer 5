@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+
+/*5- Elaborar um programa que apresente o valor da conversão em real (R$) de um valor lido em dólar (US$).
+O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário.*/
+public class Exerc5 {
+	public static void main(String args[]){
+		double real = Double.parseDouble(JOptionPane.showInputDialog("Qual é a quantidade a ser convertida?"));
+		double dolar = Double.parseDouble(JOptionPane.showInputDialog("Qual é o valor do dolar?"));
+		double quantidade = Double.parseDouble(JOptionPane.showInputDialog("Quantidade de dolares com usuario?"));
+		
+		System.out.println("Converção:" + "\n" + real * dolar + "\n" +  
+						   "Quantidade de dolares com disponive com o usuario:" + quantidade + "\n");
+	}
+}
