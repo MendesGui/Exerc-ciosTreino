@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+
+/*7- Elaborar um programa que calcule o valor do volume de uma esfera. 
+Utilize a fórmula: Volume=(4/3)*3.14159*(raio^3).
+*/
+public class Exerc7 {
+	public static void main(String args[]){
+		double raio = Double.parseDouble(JOptionPane.showInputDialog("Entre com ovalor do raio?"));
+		
+		double volume = (4*3.14159*(Math.pow(raio, 3))) / 3;
+		
+		System.out.println("Volume:" + volume);
+	}
+}
