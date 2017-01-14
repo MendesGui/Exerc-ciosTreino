@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+//19- Efetuar a leitura de dez nomes de pessoas, armazená-los em um vetor e exibi-los em seguida.
+public class Exerc19 {
+	public static void main(String args[]){
+		String vet [] = new String [10];
+		int i = 0;
+		String saida = ""; 
+		for(; i < vet.length;i++){
+			vet[i] = JOptionPane.showInputDialog("Entre com os nomes");
+			saida = saida + "\n" + vet[i];
+		}
+		
+		
+		System.out.println(saida);
+	}
+}
