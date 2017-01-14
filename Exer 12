@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+
+//12- Ler um valor numérico inteiro e apresentar uma mensagem informando se o valor é par ou ímpar
+public class Exerc12 {
+	public static void main(String args[]){
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero:"));
+		
+		if(num % 2 == 0){
+			JOptionPane.showMessageDialog(null, "O numero é par");
+		}else{
+			JOptionPane.showMessageDialog(null, "O numero é impar:" );
+		}
+	}
+}
