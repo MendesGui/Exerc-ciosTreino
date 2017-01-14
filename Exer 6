@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+/*6- Elaborar um programa que leia três valores inteiros (representados pelas variáveis A, B e C) e 
+ * apresente como resultado final o valor da soma dos quadrados dos três valores lidos.
+ */
+
+
+public class Exerc6 {
+	public static void main(String args[]){
+		int a = Integer.parseInt(JOptionPane.showInputDialog("Valor de A:"));
+		int b = Integer.parseInt(JOptionPane.showInputDialog("Valor de B"));
+		int c = Integer.parseInt(JOptionPane.showInputDialog("Valor de C"));
+		
+		System.out.println((a * a) + (b * b) + (c * c));
+	}
+}
