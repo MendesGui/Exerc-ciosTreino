@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+/*8- Faça um programa que leia 3 números e execute as seguintes atividades:
+
+- Exibir em ordem crescente os números digitados;
+
+- Exibir o maior valor digitado;
+
+- Exibir o menor valor digitado;*/
+
+public class Exerc8 {
+	public static void main(String args[]){
+		int a = Integer.parseInt(JOptionPane.showInputDialog("Valor A"));
+		int b = Integer.parseInt(JOptionPane.showInputDialog("Valor B"));
+		int c = Integer.parseInt(JOptionPane.showInputDialog("Valor c"));
+		
+		if((a > b) || (b > c) || (c > a)){
+			System.out.println(c +"\n" + b + "\n" + a);
+		}else{
+			if((a > c) || (c > b) || (b > a)){
+				System.out.println(b + "\n" + c + "\n" +a);
+			}else{
+				System.out.println(a + "\n" + b + "\n" + c);
+			}
+		}
+	}
+
+}
