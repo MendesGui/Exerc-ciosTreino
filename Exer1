@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+/*1- Solicite que o usuário digite uma temperatura em graus Celsius, 
+ * leia a temperatura digitada e exiba a temperatura convertida em graus Fahrenheit. 
+ * A fórmula de conversão é: F=(9*C+160)/5, sendo F a temperatura em Fahrenheit e C a 
+ * temperatura em Celsius.
+ */
+public class Exerc1 {
+	public static void main(String args[]){
+		int c = 0, f = 0;
+		c = Integer.parseInt(JOptionPane.showInputDialog("Digite o grau celsius"));
+		
+		f=(9*c+160)/5;
+		
+		System.out.println(f);
+		
+	}
+
+}
