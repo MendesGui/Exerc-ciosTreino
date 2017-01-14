@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+
+//16- Apresentar os resultados de uma tabuada de um número qualquer digitado.
+public class Exerc16 {
+	public static void main(String args[]){
+		int cont = Integer.parseInt(JOptionPane.showInputDialog("Entre com o numero da tabuada:"));
+		for(int i = 0; i <= 10; i++){
+			System.out.println(  i +  "*" + cont + "=" + (i * cont) );
+		}
+	}
+}
